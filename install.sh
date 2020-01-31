@@ -1,13 +1,13 @@
 #!/bin/bash
 # install ohmyzsh 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-ln -s "$HOME/dotfiles/config/" "$HOME/.config/"
+ln -s "$HOME/dotfiles/config/zsh" "$HOME/.config/zsh"
 ln -s "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 # setup tmux
 ln -s "$HOME/dotfiles/tmux.conf" "$HOME/tmux.conf"
 # install gdb stuff
-ln -s "$HOME/dotfiles/Pwngdb/" "$HOME/pwngdb/"
-ln -s "$HOME/dotfiles/peda/" "$HOME/peda/"
+ln -s "$HOME/dotfiles/Pwngdb" "$HOME/pwngdb"
+ln -s "$HOME/dotfiles/peda" "$HOME/peda"
 ln -s "$HOME/dotfiles/gdbinit" "$HOME/.gdbinit"
 # install git stuff
 ln -s "$HOME/dotfiles/gitconfig" "$HOME/.gitconfig"

@@ -71,3 +71,6 @@ let g:indentLine_enabled = 1
 let g:tex_conceal=''
 """
 
+""" Custom Filetype
+autocmd BufRead,BufNewFile *.zenv set filetype=zsh syntax=zsh
+"""
