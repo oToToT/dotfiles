@@ -1,0 +1,6 @@
+[submodule "peda"]
+	path = peda
+	url = https://github.com/longld/peda
+[submodule "Pwngdb"]
+	path = Pwngdb
+	url = https://github.com/scwuaptx/Pwngdb

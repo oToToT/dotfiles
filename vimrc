@@ -1,4 +1,4 @@
-set nu ts=4 sw=4 smarttab ai autoread expandtab cino=g1
+set nu ts=4 sw=4 smarttab ai autoread expandtab
 if !&scrolloff
 	set scrolloff=1
 endif
@@ -24,7 +24,7 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-"Plug 'elzr/vim-json'
+Plug 'elzr/vim-json'
 Plug 'chr4/nginx.vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'kern/vim-es7'
@@ -34,9 +34,8 @@ Plug 'jacoborus/tender.vim'
 "Plug 'yggdroot/indentline'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
+Plug 'zirrostig/vim-jack-syntax'
 " Plug 'terryma/vim-multiple-cursors'
-Plug 'chrisbra/colorizer'
-
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -69,5 +68,6 @@ endif
 """ indentLine Config
 let g:indentLine_char = '┊'
 let g:indentLine_enabled = 1
-"let g:tex_conceal=''
+let g:tex_conceal=''
 """
+

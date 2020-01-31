@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/student/08/b08902100/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -78,7 +78,8 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=zh_TW.UTF-8
+export LC_ALL=zh_TW.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -86,6 +87,8 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -98,40 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-platform='unknown'
-unamestr=$(uname)
-if [ "$unamestr" = 'Linux' ]; then
-    source ~/.exa/env
-    alias ls='exa --group-directories-first'
-elif [ "$unamestr" = 'FreeBSD' ]; then
-    echo "BSD detected"
-fi
+for file in ~/.config/zsh/*.zenv; do
+    source "$file"
+done
 export TERM='xterm-256color'
-export VISUAL=vim
-export EDITOR="$VISUAL"
-export LC_ALL=zh_TW.UTF-8
-
-THEME=$((RANDOM % 3))
-
-if [ $THEME = 0 ]
-then
-    echo "     ▄▄▄▄▄     ▄▄▄▄▄     ▄▄▄▄▄";
-    echo "▪    •██  ▪    •██  ▪    •██  ";
-    echo " ▄█▀▄ ▐█.▪ ▄█▀▄ ▐█.▪ ▄█▀▄ ▐█.▪";
-    echo "▐█▌.▐▌▐█▌·▐█▌.▐▌▐█▌·▐█▌.▐▌▐█▌·";
-    echo " ▀█▄▀▪▀▀▀  ▀█▄▀▪▀▀▀  ▀█▄▀▪▀▀▀ ";
-elif [ $THEME = 1 ]
-then
-	echo "        ______      ______      ______ _          _____  __           __ __";
-	echo "  ____ /_  __/____ /_  __/____ /_  __/( )_____   / ___/ / /_   ___   / // /";
-	echo " / __ \\ / /  / __ \\ / /  / __ \\ / /   |// ___/   \\__ \\ / __ \\ / _ \\ / // / ";
-	echo "/ /_/ // /  / /_/ // /  / /_/ // /     (__  )   ___/ // / / //  __// // /  ";
-	echo "\\____//_/   \\____//_/   \\____//_/     /____/   /____//_/ /_/ \\___//_//_/   ";
-	echo "                                                                           ";    
-else
-    echo "       ___ ___ ___/    __    __      ";
-    echo "|_|o  _ | _ | _ |   _ (_ |_||_ |  |  ";
-    echo "| || (_)|(_)|(_)|  _> __)| ||__|__|__";
-    echo "                                     ";
-fi
-    
