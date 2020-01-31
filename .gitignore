@@ -1,2 +1,3 @@
 config/zsh/*.zenv
 !config/zsh/welcome.zenv
+!config/zsh/colors.zenv
