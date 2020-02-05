@@ -20,7 +20,7 @@ My dotfiles
 
 1. `git clone --recursive https://github.com/oToToT/dotfiles ~/dotfiles`
 2. `cd dotfiles`
-3. For [zsh](https://www.zsh.org), run `./install.sh`
+3. For [zsh](https://www.zsh.org), run `./install.sh`  
    For [fish](https://github.com/fish-shell/fish-shell/), run `./install.fish`
 4. Enjoy !!
 
