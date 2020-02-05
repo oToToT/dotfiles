@@ -6,7 +6,7 @@ fish install --path=~/.local/share/omf --config=~/.config/omf --yes --noninterac
 rm install
 ln -sfn "$HOME/dotfiles/config" "$HOME/.config"
 # setup tmux
-ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/tmux.conf"
+ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
 mkdir -p "$HOME/.tmux/plugins/"
 ln -sfn "$HOME/dotfiles/tpm" "$HOME/.tmux/plugins/tpm"
 # install gdb stuff

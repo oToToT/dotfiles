@@ -4,7 +4,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ln -sfn "$HOME/dotfiles/config/zsh" "$HOME/.config/zsh"
 ln -sfn "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 # setup tmux
-ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/tmux.conf"
+ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
 mkdir -p "$HOME/.tmux/plugins/"
 ln -sfn "$HOME/dotfiles/tpm" "$HOME/.tmux/plugins/tpm"
 # install gdb stuff
