@@ -10,13 +10,15 @@ My dotfiles
 - [zsh](https://www.zsh.org/) config
     - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 - [vim](https://www.vim.org/) config
-    - [vim-plug](https://github.com/junegunn/vim-plug) 
+    - [vim-plug](https://github.com/junegunn/vim-plug)
+- [tmux](https://github.com/tmux/tmux) config
+    - [tpm](https://github.com/tmux-plugins/tpm)
 
 ... and more
 
 ## Install ##
 
-1. `git clone https://github.com/oToToT/dotfiles ~/dotfiles`
+1. `git clone --recursive https://github.com/oToToT/dotfiles ~/dotfiles`
 2. `cd dotfiles`
 3. For [zsh](https://www.zsh.org), run `./install.sh`  
    For [fish](https://github.com/fish-shell/fish-shell/), run `./install.fish`

@@ -4,3 +4,6 @@
 [submodule "Pwngdb"]
 	path = Pwngdb
 	url = https://github.com/scwuaptx/Pwngdb
+[submodule "tpm"]
+	path = tpm
+	url = https://github.com/tmux-plugins/tpm
