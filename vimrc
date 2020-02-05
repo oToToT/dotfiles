@@ -36,6 +36,7 @@ Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
 Plug 'zirrostig/vim-jack-syntax'
 " Plug 'terryma/vim-multiple-cursors'
+Plug 'dag/vim-fish'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
