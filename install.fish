@@ -4,7 +4,8 @@
 curl -L https://get.oh-my.fish > install
 fish install --path=~/.local/share/omf --config=~/.config/omf --yes --noninteractive
 rm install
-ln -sfn "$HOME/dotfiles/config" "$HOME/.config"
+mkdir -p "$HOME/.config/"
+ln -sfn "$HOME/dotfiles/config/fish" "$HOME/.config/fish"
 # setup tmux
 ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
 mkdir -p "$HOME/.tmux/plugins/"
