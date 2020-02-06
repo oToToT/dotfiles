@@ -23,7 +23,9 @@ nmap <leader>rt :retab<cr>
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-
+"
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 Plug 'elzr/vim-json'
 Plug 'chr4/nginx.vim'
 Plug 'digitaltoad/vim-pug'
