@@ -1,8 +1,10 @@
 #!/bin/bash
+
 # install ohmyzsh 
 curl -Lo ohmyzsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 RUNZSH=no sh ohmyzsh.sh
 rm ohmyzsh.sh
+mkdir -p "$HOME/.config/"
 ln -sfn "$HOME/dotfiles/config/zsh" "$HOME/.config/zsh"
 ln -sfn "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 # setup tmux
