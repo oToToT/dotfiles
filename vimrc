@@ -1,14 +1,17 @@
-set nu ts=4 sw=4 smarttab ai autoread expandtab
+""" Custom config
+se nu ts=4 sw=4 smarttab ai autoread expandtab
 if !&scrolloff
-	set scrolloff=1
+	se scrolloff=1
 endif
 if !&sidescrolloff
-	set sidescrolloff=5
+	se sidescrolloff=5
 endif
 filetype indent on
 filetype plugin on
+au FileType python setl ts=4
+"""
 
-""" CustomMapping
+""" Custom Mapping
 let mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>nn :NERDTreeToggle<cr>
@@ -21,7 +24,6 @@ nmap <leader>rt :retab<cr>
 " Specify a directory for plugins
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
-
 " Make sure you use single quotes
 "
 Plug 'godlygeek/tabular'
@@ -30,15 +32,15 @@ Plug 'elzr/vim-json'
 Plug 'chr4/nginx.vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'kern/vim-es7'
+Plug 'dag/vim-fish'
+Plug 'zirrostig/vim-jack-syntax'
 Plug 'itchyny/lightline.vim'
-Plug 'w0rp/ale'
 Plug 'jacoborus/tender.vim'
+Plug 'w0rp/ale'
 "Plug 'yggdroot/indentline'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
-Plug 'zirrostig/vim-jack-syntax'
 " Plug 'terryma/vim-multiple-cursors'
-Plug 'dag/vim-fish'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -53,7 +55,7 @@ set laststatus=2
 
 """ Theme tender Config
 if (has("termguicolors"))
-		set termguicolors
+	set termguicolors
 endif
 " Theme
 syntax enable
