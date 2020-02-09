@@ -4,8 +4,9 @@
 curl -Lo ohmyzsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 RUNZSH=no sh ohmyzsh.sh
 rm ohmyzsh.sh
-mkdir -p "$HOME/.config/"
-ln -sfn "$HOME/dotfiles/config/zsh" "$HOME/.config/zsh"
+rm -rf "$HOME/.oh-my-zsh/custom/"
+ln -sfn "$HOME/dotfiles/config/zsh" "$HOME/.oh-my-zsh/custom"
+mkdir -p "$HOME/.oh-my-zsh/custom/themes/"
 git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
 ln -sfn "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 # setup tmux

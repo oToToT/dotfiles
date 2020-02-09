@@ -1,3 +1,4 @@
-config/zsh/*.zenv
-!config/zsh/welcome.zenv
-!config/zsh/colors.zenv
+config/zsh/*
+!config/zsh/welcome.zsh
+!config/zsh/colors.zsh
+!config/zsh/zsh_autosuggest.zsh
