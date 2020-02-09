@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # install ohmyzsh 
 curl -Lo ohmyzsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
@@ -6,6 +6,7 @@ RUNZSH=no sh ohmyzsh.sh
 rm ohmyzsh.sh
 mkdir -p "$HOME/.config/"
 ln -sfn "$HOME/dotfiles/config/zsh" "$HOME/.config/zsh"
+git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
 ln -sfn "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 # setup tmux
 ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
