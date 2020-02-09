@@ -6,8 +6,6 @@ RUNZSH=no sh ohmyzsh.sh
 rm ohmyzsh.sh
 rm -rf "$HOME/.oh-my-zsh/custom/"
 ln -sfn "$HOME/dotfiles/config/zsh" "$HOME/.oh-my-zsh/custom"
-mkdir -p "$HOME/.oh-my-zsh/custom/themes/"
-git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
 ln -sfn "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 # setup tmux
 ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"

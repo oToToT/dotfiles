@@ -2,3 +2,7 @@ config/zsh/*
 !config/zsh/welcome.zsh
 !config/zsh/colors.zsh
 !config/zsh/zsh_autosuggest.zsh
+!config/zsh/plugins/zsh-autosuggestions
+!config/zsh/plugins/example
+!config/zsh/themes/example.zsh-theme
+!config/zsh/example.zsh

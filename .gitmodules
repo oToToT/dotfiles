@@ -7,3 +7,9 @@
 [submodule "tpm"]
 	path = tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "config/zsh/plugins/--force"]
+	path = config/zsh/plugins/--force
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "config/zsh/plugins/zsh-autosuggestions"]
+	path = config/zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions

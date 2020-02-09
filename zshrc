@@ -101,7 +101,4 @@ export EDITOR="$VISUAL"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-for file in ~/.config/zsh/*.zenv; do
-    source "$file"
-done
 export TERM='xterm-256color'
