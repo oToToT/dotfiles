@@ -10,6 +10,7 @@ ln -sfn "$HOME/dotfiles/config/fish" "$HOME/.config/fish"
 ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
 mkdir -p "$HOME/.tmux/plugins/"
 ln -sfn "$HOME/dotfiles/tpm" "$HOME/.tmux/plugins/tpm"
+. "$HOME/.tmux/plugins/tpm/scripts/install_plugins.sh"
 # install gdb stuff
 ln -sfn "$HOME/dotfiles/Pwngdb" "$HOME/pwngdb"
 ln -sfn "$HOME/dotfiles/peda" "$HOME/peda"
