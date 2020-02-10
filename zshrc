@@ -102,3 +102,6 @@ export EDITOR="$VISUAL"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export TERM='xterm-256color'
+
+# Set timezone
+export TZ='Asia/Taipei'
