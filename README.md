@@ -22,10 +22,11 @@ My dotfiles
 2. `cd ~/dotfiles`
 3. For [zsh](https://www.zsh.org), run `./install.sh`  
    For [fish](https://github.com/fish-shell/fish-shell/), run `./install.fish`
-4. Enjoy !!
+4. For [tpm](https://github.com/tmux-plugins/tpm), please press `prefix` + <kbd>I</kbd> (capital i, as in Install) to fetch the plugin.
+5. Enjoy !!
 
 ## Customize ##
 * zsh
-    You could put your own config files inside `~/.config/zsh/` with extname `.zenv`
+    You could put your own config as what ohmyzsh recommend.
 * fish
     You could do what omf suggest you, some custom config inside this repo may broken, lol.

@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+set -x
+
 # install ohmyzsh 
 curl -Lo ohmyzsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 RUNZSH=no sh ohmyzsh.sh
@@ -11,7 +13,6 @@ ln -sfn "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
 mkdir -p "$HOME/.tmux/plugins/"
 ln -sfn "$HOME/dotfiles/tpm" "$HOME/.tmux/plugins/tpm"
-. "$HOME/.tmux/plugins/tpm/scripts/install_plugins.sh"
 # install gdb stuff
 ln -sfn "$HOME/dotfiles/Pwngdb" "$HOME/pwngdb"
 ln -sfn "$HOME/dotfiles/peda" "$HOME/peda"
