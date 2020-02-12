@@ -1,10 +1,10 @@
 """ Custom config
-se nu ts=4 sw=4 smarttab ai autoread expandtab
+se nu ts=4 sw=4 sta ai ar et hls is
 if !&scrolloff
-	se scrolloff=1
+    se scrolloff=1
 endif
 if !&sidescrolloff
-	se sidescrolloff=5
+    se sidescrolloff=5
 endif
 filetype indent on
 filetype plugin on
@@ -15,8 +15,9 @@ au FileType python setl ts=4
 let mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>nn :NERDTreeToggle<cr>
-nnoremap <leader>p :set invpaste<CR> 
+nnoremap <leader>p :set invpaste<cr>
 nmap <leader>rt :retab<cr>
+nnoremap <leader>d :let @/ = ""<cr>
 """
 
 """ VimPlug - A minimalist Vim plugin manager.
@@ -55,7 +56,7 @@ set laststatus=2
 
 """ Theme tender Config
 if (has("termguicolors"))
-	set termguicolors
+    set termguicolors
 endif
 " Theme
 syntax enable
