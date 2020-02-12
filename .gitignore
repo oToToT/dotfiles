@@ -1,8 +1,15 @@
 config/zsh/*
+
+# some configs
 !config/zsh/welcome.zsh
 !config/zsh/colors.zsh
 !config/zsh/zsh_autosuggest.zsh
+
+# zsh plugins
 !config/zsh/plugins/zsh-autosuggestions
+!config/zsh/plugins/zsh-syntax-highlighting
+
+# example file by oh-my-zsh
 !config/zsh/plugins/example
 !config/zsh/themes/example.zsh-theme
 !config/zsh/example.zsh
