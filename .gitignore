@@ -4,6 +4,7 @@ config/zsh/*
 !config/zsh/welcome.zsh
 !config/zsh/colors.zsh
 !config/zsh/zsh_autosuggest.zsh
+!config/zsh/zsh_syntaxhighlight.zsh
 
 # zsh plugins
 !config/zsh/plugins/zsh-autosuggestions
