@@ -16,8 +16,9 @@ let mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>nn :NERDTreeToggle<cr>
 nnoremap <leader>p :set invpaste<cr>
-nmap <leader>rt :retab<cr>
+nnoremap <leader>rt :retab<cr>
 nnoremap <leader>d :let @/ = ""<cr>
+nnoremap <leader>u :set invnumber<cr>
 """
 
 """ VimPlug - A minimalist Vim plugin manager.
