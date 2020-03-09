@@ -15,8 +15,9 @@ au FileType python setl ts=4
 let mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>nn :NERDTreeToggle<cr>
+nmap <leader>r :Rename 
 nnoremap <leader>p :set invpaste<cr>
-nnoremap <leader>rt :retab<cr>
+nnoremap <leader>t :retab<cr>
 nnoremap <leader>d :let @/ = ""<cr>
 nnoremap <leader>u :set invnumber<cr>
 """
@@ -46,6 +47,7 @@ Plug 'w0rp/ale'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
 " Plug 'terryma/vim-multiple-cursors'
+Plug 'danro/rename.vim'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
