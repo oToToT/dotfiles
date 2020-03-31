@@ -19,6 +19,9 @@ function install
     mkdir -p "$HOME/.tmux/plugins/"
     ln -sfn "$HOME/dotfiles/tpm" "$HOME/.tmux/plugins/tpm"
 
+    # setup screen
+    ln -sfn "$HOME/dotfiles/screenrc" "$HOME/.screenrc"
+
     # install gdb stuff
     ln -sfn "$HOME/dotfiles/Pwngdb" "$HOME/pwngdb"
     ln -sfn "$HOME/dotfiles/peda" "$HOME/peda"
