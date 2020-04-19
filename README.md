@@ -13,6 +13,7 @@ My dotfiles
     - [vim-plug](https://github.com/junegunn/vim-plug)
 - [tmux](https://github.com/tmux/tmux) config
     - [tpm](https://github.com/tmux-plugins/tpm)
+- [screen](https://www.gnu.org/software/screen/) config
 
 ... and more
 
