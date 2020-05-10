@@ -88,3 +88,8 @@ let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_math = 1
 let g:vim_markdown_new_list_item_indent = 2
 """
+
+""" ale config
+call ale#Set('cpp_gcc_options', '-std=c++17 -Wall -Wextra -Wshadow -Wconversion')
+"""
+
