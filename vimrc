@@ -29,7 +29,7 @@ nnoremap <leader>u :set invnumber<cr>
 call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 "
-Plug 'godlygeek/tabular'
+" language support
 Plug 'plasticboy/vim-markdown'
 Plug 'elzr/vim-json'
 Plug 'chr4/nginx.vim'
@@ -41,14 +41,18 @@ Plug 'petRUShka/vim-sage'
 Plug 'kern/vim-es7'
 Plug 'dag/vim-fish'
 Plug 'zirrostig/vim-jack-syntax'
+Plug 'bfrg/vim-cuda-syntax'
+" theme
 Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'
+" tool
 Plug 'w0rp/ale'
-"Plug 'yggdroot/indentline'
+Plug 'godlygeek/tabular'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
-" Plug 'terryma/vim-multiple-cursors'
 Plug 'danro/rename.vim'
+"Plug 'terryma/vim-multiple-cursors'
+"Plug 'yggdroot/indentline'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -93,4 +97,3 @@ let g:vim_markdown_new_list_item_indent = 2
 """ ale config
 call ale#Set('cpp_gcc_options', '-std=c++17 -Wall -Wextra -Wshadow -Wconversion')
 """
-
