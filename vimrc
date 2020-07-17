@@ -16,6 +16,8 @@ let mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>nn :NERDTreeToggle<cr>
 nmap <leader>r :Rename 
+nnoremap <leader>e :tabe 
+nnoremap <leader>q :q 
 nnoremap <leader>p :set invpaste<cr>
 nnoremap <leader>t :retab<cr>
 nnoremap <leader>d :let @/ = ""<cr>
