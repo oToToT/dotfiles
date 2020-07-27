@@ -9,6 +9,7 @@ rm ohmyzsh.sh
 rm -rf "$HOME/.oh-my-zsh/custom/"
 ln -sfn "$HOME/dotfiles/config/zsh" "$HOME/.oh-my-zsh/custom"
 ln -sfn "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # setup tmux
 ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
