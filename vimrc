@@ -30,7 +30,7 @@ nnoremap <leader>u :set invnumber<cr>
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
-"
+
 " language support
 Plug 'plasticboy/vim-markdown'
 Plug 'elzr/vim-json'
@@ -49,6 +49,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'
 " tool
 Plug 'w0rp/ale'
+Plug 'maximbaz/lightline-ale'
+Plug 'itchyny/vim-gitbranch'
 Plug 'godlygeek/tabular'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
@@ -98,4 +100,35 @@ let g:vim_markdown_new_list_item_indent = 2
 
 """ ale config
 call ale#Set('cpp_gcc_options', '-std=c++17 -Wall -Wextra -Wshadow -Wconversion')
+let g:ale_echo_msg_format = '[%linter%] %s'
+"""
+
+"""lightline-ale
+
+let g:lightline#ale#indicator_checking = "linting..."
+
+let g:lightline.component_expand = {
+\     'linter_checking': 'lightline#ale#checking',
+\     'linter_infos': 'lightline#ale#infos',
+\     'linter_warnings': 'lightline#ale#warnings',
+\     'linter_errors': 'lightline#ale#errors',
+\     'linter_ok': 'lightline#ale#ok',
+\ }
+
+let g:lightline.component_type = {
+\     'linter_warnings': 'warning',
+\     'linter_errors': 'error',
+\ }
+
+let g:lightline.active = {
+\     'left' : [
+\         [ 'mode', 'paste' ],
+\         [ 'gitbranch', 'readonly', 'filename', 'modified', 'linter_infos' ]
+\     ],
+\     'right': [
+\          [ 'linter_errors', 'linter_warnings', 'lineinfo' ],
+\          [ 'percent' ],
+\          [ 'linter_checking',  'fileformat', 'fileencoding', 'filetype' ]
+\     ]
+\ }
 """
