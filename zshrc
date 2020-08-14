@@ -115,6 +115,3 @@ export TZ='Asia/Taipei'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# To customize prompt, run `p10k configure` or edit /nfs/undergrad/08/b08902100/.p10k.zsh.
-[[ ! -f /nfs/undergrad/08/b08902100/.p10k.zsh ]] || source /nfs/undergrad/08/b08902100/.p10k.zsh
