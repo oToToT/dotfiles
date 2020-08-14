@@ -9,4 +9,3 @@ set -gx LANG zh_TW.UTF-8
 set -gx LANGUAGE zh_TW.UTF-8
 set -gx LC_ALL zh_TW.UTF-8
 source ~/.config/fish/envs/*.fish
-#rvm default
