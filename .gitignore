@@ -14,3 +14,8 @@ config/zsh/*
 !config/zsh/plugins/example
 !config/zsh/themes/example.zsh-theme
 !config/zsh/example.zsh
+
+config/fish/*
+!config/fish/envs/*
+!config/fish/conf.d/*
+!config/fish/fish_variables
