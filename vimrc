@@ -44,6 +44,7 @@ Plug 'kern/vim-es7'
 Plug 'dag/vim-fish'
 Plug 'zirrostig/vim-jack-syntax'
 Plug 'bfrg/vim-cuda-syntax'
+Plug 'derekelkins/agda-vim'
 " theme
 Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'
@@ -53,9 +54,11 @@ Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/vim-gitbranch'
 Plug 'godlygeek/tabular'
 Plug 'raimondi/delimitmate'
+"Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'danro/rename.vim'
-"Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-sleuth'
+Plug 'mg979/vim-visual-multi'
 "Plug 'yggdroot/indentline'
 
 " On-demand loading
@@ -87,7 +90,7 @@ endif
 """
 
 """ indentLine config
-let g:indentLine_char = '┊'
+let g:indentLine_char = '⎸'
 let g:indentLine_enabled = 1
 let g:tex_conceal=''
 """
