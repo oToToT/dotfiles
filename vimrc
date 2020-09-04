@@ -45,6 +45,7 @@ Plug 'dag/vim-fish'
 Plug 'zirrostig/vim-jack-syntax'
 Plug 'bfrg/vim-cuda-syntax'
 Plug 'derekelkins/agda-vim'
+Plug 'posva/vim-vue'
 " theme
 Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'
