@@ -2,6 +2,7 @@ config/zsh/*
 
 # some configs
 !config/zsh/welcome.zsh
+!config/zsh/gpg_tty.zsh
 !config/zsh/colors.zsh
 !config/zsh/zsh_autosuggest.zsh
 !config/zsh/zsh_syntaxhighlight.zsh
