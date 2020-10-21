@@ -64,6 +64,7 @@ Plug 'mg979/vim-visual-multi'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 
 " Initialize plugin system
 call plug#end()
