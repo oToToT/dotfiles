@@ -10,3 +10,4 @@ set -gx LANGUAGE zh_TW.UTF-8
 set -gx LC_ALL zh_TW.UTF-8
 set -gx GPG_TTY (tty)
 source ~/.config/fish/envs/*.fish
+source ~/.cargo/env
