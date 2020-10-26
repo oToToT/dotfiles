@@ -21,8 +21,9 @@ ln -sfn "$HOME/dotfiles/tpm" "$HOME/.tmux/plugins/tpm"
 ln -sfn "$HOME/dotfiles/screenrc" "$HOME/.screenrc"
 
 # install gdb stuff
-ln -sfn "$HOME/dotfiles/Pwngdb" "$HOME/pwngdb"
-ln -sfn "$HOME/dotfiles/peda" "$HOME/peda"
+mkdir -p "$HOME/.gdb/"
+wget -O "$HOME/.gdb/gef.py" -q http://gef.blah.cat/py
+ln -sfn "$HOME/dotfiles/Pwngdb" "$HOME/.gdb/pwngdb"
 ln -sfn "$HOME/dotfiles/gdbinit" "$HOME/.gdbinit"
 
 # install git stuff
