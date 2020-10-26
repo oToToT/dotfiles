@@ -1,4 +1,3 @@
-source ~/peda/peda.py
 source ~/pwngdb/pwngdb.py
 source ~/pwngdb/angelheap/gdbinit.py
 
