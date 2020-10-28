@@ -46,6 +46,7 @@ Plug 'zirrostig/vim-jack-syntax'
 Plug 'bfrg/vim-cuda-syntax'
 Plug 'derekelkins/agda-vim'
 Plug 'posva/vim-vue'
+Plug 'tomlion/vim-solidity'
 " theme
 Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'
