@@ -47,21 +47,23 @@ Plug 'bfrg/vim-cuda-syntax'
 Plug 'derekelkins/agda-vim'
 Plug 'posva/vim-vue'
 Plug 'tomlion/vim-solidity'
-" theme
-Plug 'itchyny/lightline.vim'
-Plug 'jacoborus/tender.vim'
 " tool
 Plug 'w0rp/ale'
-Plug 'maximbaz/lightline-ale'
-Plug 'itchyny/vim-gitbranch'
 Plug 'godlygeek/tabular'
 Plug 'raimondi/delimitmate'
-"Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'danro/rename.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'mg979/vim-visual-multi'
+Plug 'editorconfig/editorconfig-vim'
+"Plug 'jiangmiao/auto-pairs'
 "Plug 'yggdroot/indentline'
+" theme
+Plug 'itchyny/lightline.vim'
+Plug 'jacoborus/tender.vim'
+Plug 'itchyny/vim-gitbranch'
+Plug 'maximbaz/lightline-ale'
+
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
