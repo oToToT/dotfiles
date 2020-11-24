@@ -4,7 +4,7 @@ My dotfiles
 ## Includes ##
 
 - [Pwngdb](https://github.com/scwuaptx/Pwngdb)
-- [peda](https://github.com/longld/peda)
+- [GEF](https://github.com/hugsy/gef)
 - [fish](https://github.com/fish-shell/fish-shell/) config
     - [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
 - [zsh](https://www.zsh.org/) config
