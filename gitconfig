@@ -3,6 +3,8 @@
 [user]
     email = ty1208chiang@gmail.com
     name = oToToT
-	signingkey = 345C3A4D42D5023E0C12F52F2CAA28B5410E84A4
+    signingkey = 345C3A4D42D5023E0C12F52F2CAA28B5410E84A4
 [commit]
-	gpgsign = true
+    gpgsign = true
+[push]
+    followTags = true

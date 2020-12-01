@@ -108,6 +108,7 @@ let g:vim_markdown_new_list_item_indent = 2
 
 """ ale config
 call ale#Set('cpp_gcc_options', '-std=c++17 -Wall -Wextra -Wshadow -Wconversion')
+call ale#Set('cpp_cc_options', '-std=c++17')
 let g:ale_echo_msg_format = '[%linter%] %s'
 """
 
