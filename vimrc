@@ -25,7 +25,6 @@ nnoremap <leader>u :set invnumber<cr>
 """
 
 """ VimPlug - A minimalist Vim plugin manager.
-
 " Specify a directory for plugins
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
@@ -56,6 +55,7 @@ Plug 'danro/rename.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'mg979/vim-visual-multi'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'rhysd/vim-clang-format'
 "Plug 'jiangmiao/auto-pairs'
 "Plug 'yggdroot/indentline'
 " theme
@@ -63,7 +63,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'maximbaz/lightline-ale'
-
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -112,8 +111,13 @@ call ale#Set('cpp_cc_options', '-std=c++17')
 let g:ale_echo_msg_format = '[%linter%] %s'
 """
 
-"""lightline-ale
+""" clang-format
+nmap <Leader>C :ClangFormatAutoToggle<CR>
+autocmd FileType c,cpp nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp vnoremap <buffer><Leader>cf :ClangFormat<CR>
+"""
 
+"""lightline-ale
 let g:lightline#ale#indicator_checking = "linting..."
 
 let g:lightline.component_expand = {
