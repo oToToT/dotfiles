@@ -22,6 +22,9 @@ nnoremap <leader>p :set invpaste<cr>
 nnoremap <leader>t :retab<cr>
 nnoremap <leader>d :let @/ = ""<cr>
 nnoremap <leader>u :set invnumber<cr>
+nmap <Leader>F :let g:ale_fix_on_save=!g:ale_fix_on_save<CR>
+autocmd FileType c,cpp nnoremap <buffer><Leader>ff :<C-u>ALEFix<CR>
+autocmd FileType c,cpp vnoremap <buffer><Leader>ff :ALEFix<CR>
 """
 
 """ VimPlug - A minimalist Vim plugin manager.
@@ -47,7 +50,7 @@ Plug 'derekelkins/agda-vim'
 Plug 'posva/vim-vue'
 Plug 'tomlion/vim-solidity'
 " tool
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'godlygeek/tabular'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
@@ -55,7 +58,6 @@ Plug 'danro/rename.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'mg979/vim-visual-multi'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'rhysd/vim-clang-format'
 "Plug 'jiangmiao/auto-pairs'
 "Plug 'yggdroot/indentline'
 " theme
@@ -108,14 +110,13 @@ let g:vim_markdown_new_list_item_indent = 2
 """ ale config
 call ale#Set('cpp_gcc_options', '-std=c++17 -Wall -Wextra -Wshadow -Wconversion')
 call ale#Set('cpp_cc_options', '-std=c++17')
+let g:ale_fixers = {
+\    'cpp': ['clang-format'],
+\    'c':  ['clang-format'],
+\}
 let g:ale_echo_msg_format = '[%linter%] %s'
 """
 
-""" clang-format
-nmap <Leader>C :ClangFormatAutoToggle<CR>
-autocmd FileType c,cpp nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
-autocmd FileType c,cpp vnoremap <buffer><Leader>cf :ClangFormat<CR>
-"""
 
 """lightline-ale
 let g:lightline#ale#indicator_checking = "linting..."
