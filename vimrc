@@ -22,7 +22,7 @@ nnoremap <leader>p :set invpaste<cr>
 nnoremap <leader>t :retab<cr>
 nnoremap <leader>d :let @/ = ""<cr>
 nnoremap <leader>u :set invnumber<cr>
-nmap <Leader>F :let g:ale_fix_on_save=!g:ale_fix_on_save<CR>
+nmap <Leader>F :let g:ale_fix_on_save=!g:ale_fix_on_save<CR>:echo "fix on save" g:ale_fix_on_save?"enabled":"disabled"<CR>
 autocmd FileType c,cpp nnoremap <buffer><Leader>ff :<C-u>ALEFix<CR>
 autocmd FileType c,cpp vnoremap <buffer><Leader>ff :ALEFix<CR>
 """
