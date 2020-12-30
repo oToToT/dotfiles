@@ -58,8 +58,8 @@ Plug 'danro/rename.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'mg979/vim-visual-multi'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'yggdroot/indentline'
 "Plug 'jiangmiao/auto-pairs'
-"Plug 'yggdroot/indentline'
 " theme
 Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'
@@ -98,7 +98,6 @@ endif
 """ indentLine config
 let g:indentLine_char = '⎸'
 let g:indentLine_enabled = 1
-let g:tex_conceal=''
 """
 
 """ vim-markdown config
