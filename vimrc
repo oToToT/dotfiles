@@ -98,6 +98,7 @@ endif
 """ indentLine config
 let g:indentLine_char = '⎸'
 let g:indentLine_enabled = 1
+au FileType markdown let g:indentLine_setConceal = 0
 """
 
 """ vim-markdown config
