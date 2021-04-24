@@ -6,6 +6,8 @@ config/zsh/*
 !config/zsh/colors.zsh
 !config/zsh/zsh_autosuggest.zsh
 !config/zsh/zsh_syntaxhighlight.zsh
+# cooperated with https://gist.github.com/oToToT/3d150dd28c635fead94a9d989e109ef8
+!config/zsh/prompt_tmp2.zsh
 
 # zsh plugins
 !config/zsh/plugins/zsh-autosuggestions
