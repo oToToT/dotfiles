@@ -108,8 +108,6 @@ let g:vim_markdown_new_list_item_indent = 2
 """
 
 """ ale config
-let g:ale_linter_aliases = {'cuda': ['cpp', 'cuda']}
-let g:ale_linters = {'cuda': ['nvcc', 'clangtidy', 'clangd']}
 call ale#Set('cpp_cc_options', '-std=c++17 -Wall -Wextra -Wshadow -Wconversion -Wwrite-strings')
 call ale#Set('cpp_clangcheck_options', '-std=c++17 -Wall -Wextra -Wshadow -Wconversion -Wwrite-strings')
 call ale#Set('cpp_clangtidy_extra_options', '-extra-arg=-std=c++17')
