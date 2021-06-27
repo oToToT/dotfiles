@@ -48,6 +48,7 @@ Plug 'tomlion/vim-solidity'
 Plug 'dag/vim-fish'
 Plug 'petRUShka/vim-sage'
 Plug 'zirrostig/vim-jack-syntax'
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'bfrg/vim-cuda-syntax'
 Plug 'derekelkins/agda-vim'
 " tool
