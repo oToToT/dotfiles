@@ -8,3 +8,5 @@
     gpgsign = true
 [push]
     followTags = true
+[init]
+	defaultBranch = main
