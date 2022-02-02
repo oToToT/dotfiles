@@ -1,5 +1,5 @@
 """ Custom config
-se nu ts=4 sw=4 nosmd sta ai ar et hls is
+se nu ts=4 sw=4 nosmd sta ai ar et hls is cino+=j1
 if !&scrolloff
     se scrolloff=1
 endif
