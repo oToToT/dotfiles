@@ -9,4 +9,4 @@
 [push]
     followTags = true
 [init]
-	defaultBranch = main
+    defaultBranch = main
