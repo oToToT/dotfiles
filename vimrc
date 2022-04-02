@@ -51,6 +51,7 @@ Plug 'zirrostig/vim-jack-syntax'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'bfrg/vim-cuda-syntax'
 Plug 'derekelkins/agda-vim'
+Plug 'udalov/kotlin-vim'
 " tool
 Plug 'dense-analysis/ale'
 Plug 'godlygeek/tabular'
