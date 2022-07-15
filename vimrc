@@ -62,6 +62,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'mg979/vim-visual-multi'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'yggdroot/indentline'
+Plug 'tpope/vim-obsession'
 "Plug 'jiangmiao/auto-pairs'
 " theme
 Plug 'itchyny/lightline.vim'
