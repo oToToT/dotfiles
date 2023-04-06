@@ -16,6 +16,10 @@ let mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>nn :NERDTreeToggle<cr>
 nmap <leader>r :Rename 
+nmap gd :ALEGoToDefinition<cr>
+nmap gr :ALEFindReferences<cr>
+nnoremap <leader>xx :cclose<cr>
+nnoremap <leader>xc :cle<cr>
 nnoremap <leader>e :tabe 
 nnoremap <leader>q :q 
 nnoremap <leader>p :set invpaste<cr>
@@ -112,14 +116,15 @@ let g:vim_markdown_new_list_item_indent = 2
 """
 
 """ ale config
-call ale#Set('cpp_cc_options', '-std=c++17 -Wall -Wextra -Wshadow -Wconversion -Wwrite-strings')
-call ale#Set('cpp_clangcheck_options', '-std=c++17 -Wall -Wextra -Wshadow -Wconversion -Wwrite-strings')
-call ale#Set('cpp_clangtidy_extra_options', '-extra-arg=-std=c++17')
 call ale#Set('cuda_nvcc_options', '-std=c++17')
 let g:ale_fixers = {
 \    'cpp': ['clang-format'],
 \    'c':  ['clang-format'],
-\    'cuda': ['clang-format']
+\    'cuda': ['clang-format'],
+\    'rust': ['rustfmt']
+\}
+let g:ale_linters = {
+\   'cpp': ['clangd'],
 \}
 let g:ale_echo_msg_format = '[%linter%] %s'
 """
