@@ -63,7 +63,7 @@ Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
 Plug 'danro/rename.vim'
 Plug 'tpope/vim-sleuth'
-Plug 'mg979/vim-visual-multi'
+"Plug 'mg979/vim-visual-multi'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'yggdroot/indentline'
 Plug 'tpope/vim-obsession'
@@ -125,6 +125,7 @@ let g:ale_fixers = {
 \}
 let g:ale_linters = {
 \   'cpp': ['clangd'],
+\   'rust': ['analyzer'],
 \}
 let g:ale_echo_msg_format = '[%linter%] %s'
 """
