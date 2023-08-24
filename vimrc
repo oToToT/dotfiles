@@ -29,6 +29,7 @@ nnoremap <leader>u :set invnumber<cr>
 nmap <Leader>F :let g:ale_fix_on_save=!g:ale_fix_on_save<CR>:echo "fix on save" g:ale_fix_on_save?"enabled":"disabled"<CR>
 autocmd FileType c,cpp nnoremap <buffer><Leader>ff :<C-u>ALEFix<CR>
 autocmd FileType c,cpp vnoremap <buffer><Leader>ff :ALEFix<CR>
+autocmd FileType c,cpp let c_no_curly_error=1
 """
 
 """ VimPlug - A minimalist Vim plugin manager.
