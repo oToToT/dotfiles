@@ -1,3 +1,4 @@
+set -gx FFSEND_HOST https://send.dve.tw/
 set -gx VISUAL vim
 set -gx EDITOR "$VISUAL"
 set -gx PULSE_SERVER tcp:127.0.0.1
