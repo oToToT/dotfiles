@@ -1,14 +1,25 @@
 """ Custom config
-se nu ts=4 sw=4 nosmd sta ai ar et hls is cino+=j1
+set number
+set tabstop=4
+set shiftwidth=4
+set noshowmode
+set showtabline
+set autoindent
+set autoread
+set expandtab
+set hlsearch
+set incsearch
+set cinoptions+=j1
 if !&scrolloff
-    se scrolloff=1
+    set scrolloff=1
 endif
 if !&sidescrolloff
-    se sidescrolloff=5
+    set sidescrolloff=5
 endif
 filetype indent on
 filetype plugin on
-au FileType python setl ts=4
+autocmd FileType c,cpp let c_no_curly_error=1
+autocmd FileType c,cpp setl cin
 """
 
 """ Custom Mapping
@@ -29,7 +40,6 @@ nnoremap <leader>u :set invnumber<cr>
 nmap <Leader>F :let g:ale_fix_on_save=!g:ale_fix_on_save<CR>:echo "fix on save" g:ale_fix_on_save?"enabled":"disabled"<CR>
 autocmd FileType c,cpp nnoremap <buffer><Leader>ff :<C-u>ALEFix<CR>
 autocmd FileType c,cpp vnoremap <buffer><Leader>ff :ALEFix<CR>
-autocmd FileType c,cpp let c_no_curly_error=1
 """
 
 """ VimPlug - A minimalist Vim plugin manager.
@@ -57,6 +67,7 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'bfrg/vim-cuda-syntax'
 Plug 'derekelkins/agda-vim'
 Plug 'udalov/kotlin-vim'
+
 " tool
 Plug 'dense-analysis/ale'
 Plug 'godlygeek/tabular'
@@ -64,11 +75,12 @@ Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdcommenter'
 Plug 'danro/rename.vim'
 Plug 'tpope/vim-sleuth'
-"Plug 'mg979/vim-visual-multi'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'yggdroot/indentline'
 Plug 'tpope/vim-obsession'
+"Plug 'mg979/vim-visual-multi'
 "Plug 'jiangmiao/auto-pairs'
+
 " theme
 Plug 'itchyny/lightline.vim'
 Plug 'jacoborus/tender.vim'
