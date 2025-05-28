@@ -10,6 +10,9 @@ return {
   },
   {
     "williamboman/mason-lspconfig.nvim",
+  },
+  {
+    "neovim/nvim-lspconfig",
     config = function()
       local opts = { noremap=true, silent=true }
       -- Use an on_attach function to only map the following keys
@@ -37,7 +40,7 @@ return {
 
       -- Use a loop to conveniently call 'setup' on multiple servers and
       -- map buffer local keybindings when the language server attaches
-      local servers = { 'pyright', 'clangd', 'gopls' }
+      local servers = { 'pyright', 'clangd', 'gopls', 'superhtml' }
       local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
       for _, lsp in pairs(servers) do
         require('lspconfig')[lsp].setup {
@@ -60,9 +63,7 @@ return {
         }
       }
     end
-  },
-  {
-    "neovim/nvim-lspconfig",
+
   },
   {
     "nvim-treesitter/nvim-treesitter",
@@ -71,6 +72,7 @@ return {
         ensure_installed = {
           "c",
           "lua",
+          "rust",
           "vim",
           "vimdoc",
           "query",
