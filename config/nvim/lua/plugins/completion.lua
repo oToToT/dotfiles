@@ -23,7 +23,7 @@ return {
           ["<C-e>"] = cmp.mapping.abort(),
           ["<Up>"] = cmp.mapping.select_prev_item({behavior = "select"}),
           ["<Down>"] = cmp.mapping.select_next_item({behavior = "select"}),
-          ["<Tab>"] = cmp.mapping.select_next_item({behavior = "select"}),
+          ["<S-Tab>"] = cmp.mapping.select_next_item({behavior = "select"}),
         },
         sources = cmp.config.sources({
           { name = "nvim_lsp" },
