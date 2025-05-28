@@ -28,7 +28,7 @@ return {
     branch = "0.1.x",
     dependencies = { "nvim-lua/plenary.nvim" },
     keys = {
-      {
+    {
         "<Leader>ff",
         "<Cmd>Telescope find_files<CR>",
         desc = "Telescope find files"
@@ -52,5 +52,8 @@ return {
   },
   {
     "github/copilot.vim"
-  }
+  },
+  { 
+    'danro/rename.vim'
+  },
 }
