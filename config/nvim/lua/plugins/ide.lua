@@ -77,4 +77,21 @@ return {
       })
     end,
   },
+  {
+    "FabijanZulj/blame.nvim",
+    lazy = false,
+    config = function()
+      require('blame').setup {}
+      vim.api.nvim_set_keymap("n", "<Leader>b", "<Cmd>BlameToggle<CR>", {})
+    end,
+    opts = {
+      mappings = {
+        commit_info = "i",
+        stack_push = "<TAB>",
+        stack_pop = "<S-TAB>",
+        show_commit = "<CR>",
+        close = { "<esc>", "q" },
+      }
+    },
+  },
 }
