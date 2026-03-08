@@ -64,20 +64,12 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    config = function()
-      require("nvim-treesitter.configs").setup({
-        ensure_installed = {
-          "c",
-          "lua",
-          "rust",
-          "vim",
-          "vimdoc",
-          "query",
-          "markdown",
-          "markdown_inline",
-        },
-      })
-    end,
+    opts = {
+      ensure_installed = { "c", "lua", "rust", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
+      auto_install = true,
+      highlight = { enable = true },
+      indent = { enable = true },
+    },
     build = ":TSUpdate",
   },
   {
