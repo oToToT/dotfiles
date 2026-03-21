@@ -70,10 +70,12 @@ return {
           kotlin = { "ktfmt" },
           javascriptreact = { "prettierd" },
         },
-        format_on_save = {
-          timeout_ms = 10000,
-          lsp_format = "fallback",
-        }
+        format_on_save = function(_)
+          if vim.g.disable_autoformat then
+            return
+          end
+          return { timeout_ms = 10000, lsp_format = "fallback" }
+        end,
       })
     end,
   },
