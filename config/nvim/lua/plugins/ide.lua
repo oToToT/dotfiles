@@ -69,6 +69,7 @@ return {
         formatters_by_ft = {
           kotlin = { "ktfmt" },
           javascriptreact = { "prettierd" },
+          python = { "ruff_format" }
         },
         format_on_save = function(_)
           if vim.g.disable_autoformat then
