@@ -3,6 +3,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     opts = {
       ensure_installed = { 'ty', 'clangd', 'superhtml', 'lua_ls', 'kotlin_lsp', 'jsonls', 'rust_analyzer', 'cssls' },
+      automatic_enable = false,
     },
     dependencies = {
       { "mason-org/mason.nvim", opts = {} },
