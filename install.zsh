@@ -34,3 +34,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -sfn "$HOME/dotfiles/vimrc" "$HOME/.vimrc"
 vim +PlugInstall +qa
+
+# install nvim config
+ln -sfn "$HOME/dotfiles/config/nvim" "$HOME/.config/nvim"
