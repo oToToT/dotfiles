@@ -14,6 +14,9 @@ My dotfiles
 - [tmux](https://github.com/tmux/tmux) config
     - [tpm](https://github.com/tmux-plugins/tpm)
 - [screen](https://www.gnu.org/software/screen/) config
+- [mpv](https://mpv.io/) config
+    - [uosc](https://github.com/tomasklaen/uosc)
+    - [thumbfast](https://github.com/po5/thumbfast)
 
 ... and more
 

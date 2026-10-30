@@ -21,3 +21,9 @@ config/zsh/*
 config/fish/*
 !config/fish/envs/*
 !config/fish/conf.d/*
+
+# mpv: third-party scripts/fonts are fetched by install script
+config/mpv/scripts/
+config/mpv/fonts/
+config/mpv/subtitles/
+config/mpv/watch_later/

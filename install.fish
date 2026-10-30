@@ -39,6 +39,12 @@ function install
 
     # install nvim config
     ln -sfn "$HOME/dotfiles/config/nvim" "$HOME/.config/nvim"
+
+    # install mpv config (uosc + thumbfast)
+    ln -sfn "$HOME/dotfiles/config/mpv" "$HOME/.config/mpv"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/tomasklaen/uosc/HEAD/installers/unix.sh)"
+    curl -fLo "$HOME/.config/mpv/scripts/thumbfast.lua" --create-dirs \
+        https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
 end
 
 install
