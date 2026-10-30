@@ -24,8 +24,8 @@ My dotfiles
 
 1. `git clone --recurse-submodules -j8 https://github.com/oToToT/dotfiles ~/dotfiles`
 2. `cd ~/dotfiles`
-3. For [zsh](https://www.zsh.org), run `./install.sh`  
-   For [fish](https://github.com/fish-shell/fish-shell/), run `./install.fish`
+3. Run `./install.sh` and pick the packages you want from the menu  
+   (or `./install.sh nvim mpv` for specific ones, `./install.sh --all` for everything)
 4. For [tpm](https://github.com/tmux-plugins/tpm), please press `prefix` + <kbd>I</kbd> (capital i, as in Install) to fetch the plugin.
 5. Enjoy !!
 
